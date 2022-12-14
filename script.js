@@ -46,6 +46,8 @@ colorSetter=(event)=>{
     let greenValue=Math.floor(Math.random()*256);
     let blueValue=Math.floor(Math.random()*256);
     colorBox.style.backgroundColor=`rgb(${redValue},${greenValue},${blueValue})`;
+    const title=document.querySelector(".title h1");
+    title.innerHTML=`THE GREAT RGB(${redValue},${greenValue},${blueValue})`;
    
 
     });
